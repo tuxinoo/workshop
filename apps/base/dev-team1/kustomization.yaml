@@ -3,4 +3,6 @@ kind: Kustomization
 namespace: dev-team1
 resources:
   - namespaces.yaml
+  - source.yaml
+  - release.yaml
 

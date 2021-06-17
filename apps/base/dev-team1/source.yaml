@@ -1,0 +1,7 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: parrot
+spec:
+  interval: 1m
+  url: https://cloudouestk8slabregistry.azurecr.io/helm/parrot
