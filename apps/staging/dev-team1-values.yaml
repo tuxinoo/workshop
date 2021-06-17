@@ -1,0 +1,13 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: dev-team1
+  namespace: dev-team1
+spec:
+  chart:
+    spec:
+      version: ">=0.2.0-alpha"
+  test:
+    enable: false
+  values:
+    replica: 2
